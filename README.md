@@ -21,4 +21,4 @@ Directory Structure
     |--- environment.yml <- file with libraries and library versions for recreating the analysis environment
    
 Install the enironement by running
-`conda create env -f environment.yml`
+`conda create -f environment.yml`
