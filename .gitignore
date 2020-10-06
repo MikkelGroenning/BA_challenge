@@ -2,24 +2,6 @@
 __pycache__/
 *.py[cod]
 
-# C and Fortran extensions
-*.so
-*.dylib
-*.dll
-*.slo
-*.lo
-*.o
-*.obj
-*.mod
-*.smod
-*.lai
-*.la
-*.a
-*.lib
-*.exe
-*.out
-*.app
-
 # Distribution / packaging
 .Python
 env/
@@ -80,6 +62,9 @@ target/
 
 # Pycharm
 .idea
+
+# VS code
+/.vscode
 
 # TeX/LaTeX
 *.aux
