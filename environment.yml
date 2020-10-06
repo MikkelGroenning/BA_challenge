@@ -1,0 +1,14 @@
+name: TEST_ENVIRONMENT
+dependencies:
+  - python=3.7
+  - ipykernel
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+  - setuptools
+  - pip
+  - pip:
+      - "--editable ."
