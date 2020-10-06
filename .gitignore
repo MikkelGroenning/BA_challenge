@@ -62,7 +62,7 @@ target/
 .idea
 
 # VS code
-/.vscode
+.vscode/
 
 # TeX/LaTeX
 *.aux
