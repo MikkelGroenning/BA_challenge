@@ -6,7 +6,6 @@ Directory Structure
     ├── LICENSE
     ├── README.md
     ├── models  <- compiled model .pkl or HDFS or .pb format
-    ├── config  <- any configuration files
     ├── data
     │   ├── interim <- data in intermediate processing stage
     │   ├── processed <- data after all preprocessing has been done
@@ -21,3 +20,5 @@ Directory Structure
         ├── modeling    <- scripts for generating models
     |--- environment.yml <- file with libraries and library versions for recreating the analysis environment
    
+Install the enironement by running
+`conda create env -f environment.yml`
