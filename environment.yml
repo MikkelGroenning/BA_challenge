@@ -12,3 +12,5 @@ dependencies:
   - pip
   - pip:
       - "--editable ."
+      - geopy
+      - folium
