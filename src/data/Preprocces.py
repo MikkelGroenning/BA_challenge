@@ -39,7 +39,11 @@ def findGeocode(city):
       
     except GeocoderTimedOut: 
           
-        return findGeocode(city)     
+        return findGeocode(city)
+    
+    except GeocoderUnavailable:
+        
+        return findGeocode(city)
   
 # each value from city column 
 # will be fetched and sent to 
@@ -72,7 +76,6 @@ df["Latitude"] = np.array(latitude)
 df["Longitude"] = np.array(longitude)
 
 
-df.to_csv(os.path.abspath('../../data/Processed/Cities.csv'))
 
 print("Done")
 
@@ -85,6 +88,10 @@ def country_to_continent(country_name):
 
 df['Continent'] = [country_to_continent(con) for con in df.Country]
 
+
+#%% Fix object columns
+df['Bikeshare_Stations'] = pd.to_numeric(df['Bikeshare_Stations'], errors='coerce')
+df['Bicycle_Modeshare_(%)'] = pd.to_numeric(df['Bicycle_Modeshare_(%)'], errors='coerce')
 
 #%% Return files
 
