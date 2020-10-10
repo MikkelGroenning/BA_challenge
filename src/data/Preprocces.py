@@ -5,6 +5,7 @@ import numpy as np
 import os
 from geopy.exc import GeocoderTimedOut 
 from geopy.geocoders import Nominatim 
+import pycountry_convert as pc
 
 
 abspath = os.path.abspath(__file__)
@@ -12,6 +13,10 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 # Read data frame
 df = pd.read_excel(os.path.abspath('../../data/Raw/Cities.xls'), index_col=0)
+
+
+#%% Add _ instead of space
+df.columns = df.columns.str.replace(' ', '_')
 
 #%% Add longitude and latitude
 # Initialize empty lists
@@ -70,4 +75,21 @@ df["Longitude"] = np.array(longitude)
 df.to_csv(os.path.abspath('../../data/Processed/Cities.csv'))
 
 print("Done")
+
+#%% Add continen
+def country_to_continent(country_name):
+    country_alpha2 = pc.country_name_to_country_alpha2(country_name)
+    country_continent_code = pc.country_alpha2_to_continent_code(country_alpha2)
+    country_continent_name = pc.convert_continent_code_to_continent_name(country_continent_code)
+    return country_continent_name
+
+df['Continent'] = [country_to_continent(con) for con in df.Country]
+
+
+#%% Return files
+
+df.to_csv(os.path.abspath('../../data/Processed/Cities.csv'))
+
+print("Done")
+
 # %%
