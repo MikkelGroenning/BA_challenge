@@ -17,3 +17,4 @@ dependencies:
       - "--editable ."
       - folium
       - geopy
+      - pycountry-convert
