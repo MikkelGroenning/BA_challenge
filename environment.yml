@@ -1,4 +1,6 @@
 name: BA_challenge
+channels:
+    - conda-forge
 dependencies:
   - python=3.7
   - ipykernel
@@ -9,8 +11,9 @@ dependencies:
   - seaborn
   - tqdm
   - setuptools
+  - xlrd
   - pip
   - pip:
       - "--editable ."
-      - geopy
       - folium
+      - geopy
