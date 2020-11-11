@@ -85,3 +85,4 @@ bin/
 
 # exclude external models from source control
 /src/external/
+data/Raw/dist2coast.txt
