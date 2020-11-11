@@ -17,7 +17,6 @@ dependencies:
   - xlrd
   - pip
   - pip:
-      - "--editable ."
       - folium
       - geopy
       - pycountry-convert
