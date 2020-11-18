@@ -41,6 +41,7 @@ Directory Structure
     ├── README.md
     ├── data
     │   ├── processed 	<- data after all preprocessing has been done
+    │   ├── interim		<- data saved but not to be used for final analysis
     │   └── raw 		<- original unmodified data acting as source of truth and provenance
     │
     ├── docs 			<- usage documentation or reference papers
