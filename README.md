@@ -6,11 +6,11 @@ To read the project as a full report go into the notebook-folder and read the no
 - 0_Introduction (Short introduction the project and scope)
 - 1_Preprocess (Preprocessing of the original cities data)
 - 2_Descriptive (Descriptive analysis of the original cities data)
-- 3_modelling_part1 (Machine learning models on the original cities data prediction CO2 emission)
+- 3_Modelling_part1 (Machine learning models on the original cities data prediction CO2 emission)
 - 4_External_data (Gathering and process of external geographical and meteorological data)
 - 5_External_Desciptive (Descriptive analysis on the new acquired data)
-- 6_modelling_part2 (Machine learning models predicting the CO2 emision using the additional data)
-- 7_conclusion (Conclusion on the project and key takeaways)
+- 6_Modelling_part2 (Machine learning models predicting the CO2 emision using the additional data)
+- 7_Conclusion (Conclusion on the project and key takeaways)
 
 Please note the the part 1 and part 2 (based on the train/test-split) is provided both in 03_modelling_part1 and 06_modelling_part2 - just with more data in 06_modelling_part2.
 
