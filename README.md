@@ -32,7 +32,7 @@ Verify that the correct environment is activated by running
 
 All code should now run as intended.
 
-Authored by Toke Bøgelund Andersen (s164202) and Mikkel Grønning (s144968).
+Authored by Toke Bøgelund Andersen (s164202) and Mikkel Grønning (s144968). See 7_conclussion for individual contribution.
 
 Directory Structure
 --------------------
